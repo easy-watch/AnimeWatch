@@ -1,0 +1,18 @@
+{
+  "home": {
+    "url": "https://hianime.to",
+    "text": "Home"
+  },
+  "instagram": {
+    "url": "https://www.instagram.com/",
+    "text": "Instagram"
+  },
+  "twitter": {
+    "url": "https://twitter.com/",
+    "text": "Twitter"
+  },
+  "facebook": {
+    "url": "https://www.facebook.com/",
+    "text": "Facebook"
+  }
+}

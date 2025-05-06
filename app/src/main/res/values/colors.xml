@@ -1,0 +1,4 @@
+<resources>
+    <color name="default_button_color">#CCCCCC</color> <!-- Light gray for default -->
+    <color name="selected_button_color">#4CAF50</color> <!-- Green for selected button -->
+</resources>

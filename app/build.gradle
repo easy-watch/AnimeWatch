@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.0"
+
+    defaultConfig {
+        applicationId "com.animewatch.app"
+        minSdkVersion 14
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0.10"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:21.0.3' // SDK 21 এর সাথে সামঞ্জস্যপূর্ণ
+    implementation 'com.android.support:support-v4:21.0.3' // Notification এবং VPN এর জন্য
+    implementation 'com.google.firebase:firebase-auth:11.8.0' // লগইন/রেজিস্ট্রেশন
+    implementation 'com.google.firebase:firebase-database:11.8.0' // চ্যাটিং
+}

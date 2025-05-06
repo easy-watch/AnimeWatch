@@ -1,0 +1,13 @@
+{
+  "buttons": [
+    {"url": "https://hianimez.to/home", "text": "HiAnime"},
+    {"url": "https://9animetv.to/home", "text": "Anime 1"},
+    {"url": "https://www.crunchyroll.com/", "text": "Anime 2"},
+    {"url": "https://citysonic.tv/home", "text": "Movie"},
+    {"url": "https://www.sling.com/", "text": "Sling TV"},
+    {"url": "https://www.viz.com/", "text": "Viz Media"},
+    {"url": "https://www.anime-planet.com/", "text": "Anime-Planet"},
+    {"url": "https://www.museasia.com/", "text": "Muse Asia"},
+    {"url": "https://www.gogoanime.ai/", "text": "GoGoAnime"}
+  ]
+}

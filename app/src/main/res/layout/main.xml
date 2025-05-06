@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	
+	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#201F31">
+
+    <!-- No Internet Text -->
+    <TextView
+        android:id="@+id/no_internet_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="No Internet Connection"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <!-- Horizontal ScrollView for buttons -->
+    <HorizontalScrollView
+        android:id="@+id/category_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#201F31"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/button_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="0dp" />
+    </HorizontalScrollView>
+
+    <!-- RelativeLayout to overlay ProgressBar on Main WebView -->
+    <RelativeLayout
+		
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Main WebView -->
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#201F31"
+            android:overScrollMode="always"
+            android:scrollbars="none"
+            android:scrollingCache="false"
+            android:visibility="visible" />
+
+        <!-- ProgressBar (Overlay) -->
+        <ProgressBar
+            android:id="@+id/loading_progress"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!-- Footer with Social Media Icons -->
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#201F31"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <!-- Icons will be added dynamically by MainActivity -->
+    </LinearLayout>
+</LinearLayout>
